@@ -18,9 +18,9 @@ mkdir PPE4_FINI
 cd PPE4_FINI
 git clone https://github.com/zozo404/PPE4_FINI.git
 ```
-### A avoir ❗️
+
 Installer Docker ainsi que les images MariaDB & PHPMyAdmin afin d'assurer le bon fonctionnement du site.
-- Se connecter du PHPMyAdmin
+- Se connecter sur PHPMyAdmin
 - Choisir "Importer" et sélectionner le ficher ppe3(7).sql se situant dans PPE4_FINI
  
 Ensuite, il faut installer Docker et les images MariaDB et PHPMyAdmin, une image Symfony (ex : https://github.com/cnadal/machine_docker )
