@@ -30,7 +30,7 @@ Ouvrez votre IDE et, modifiez les informations de connexion au serveur MySQL dan
 Après cela, installez les dépendances du projet Symfony, pour ceci exécuter le container où est situer le projet:
 ```bash
 docker exec -it <nom-container> bash
-cd PPE4
+cd PPE4_FINI
 composer install
 composer update
 ```
