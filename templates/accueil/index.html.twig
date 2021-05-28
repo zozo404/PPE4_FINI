@@ -1,0 +1,24 @@
+{% include 'base.html.twig' %}
+
+{% block body %}
+    <div name="grid" class="grid grid-flow-row grid-cols-2 grid-rows-2 gap-x-2 gapx-y-16 text-center">
+        {% for categorie in categories %}
+            <div class="mb-16 inline mx-auto bg-gray-100 rounded-t-3xl rounded-b-3xl w-96 transition duration-1000 ease-out transform hover:-translate-y-1 hover:scale-110">
+                <img class="rounded-full w-16 mx-auto mt-6" src="{{ app.request.uri ~ "img/categories/" ~ categorie.idcategorie ~ "/" ~ categorie.image }}" />
+                <h1 style="font-family: 'Pacifico', cursive;" class="antialiased font-thin text-2xl">{{ categorie.nom }}</h1>
+                <div name="ud" class="bg-blue-500 h-1 mx-auto w-2 mt-1 rounded-full inline-block"></div>
+                <div name="ud" class="bg-blue-500 h-1 mx-auto w-5 mt-1 rounded-full inline-block"></div>
+                <div name="ud" class="bg-blue-500 h-1 mx-auto w-5/12 inline-block"></div>
+                <div name="ud" class="bg-blue-500 h-1 mx-auto w-5 mt-1 rounded-full inline-block"></div>
+                <div name="ud" class="bg-blue-500 h-1 mx-auto w-2 mt-1 rounded-full inline-block"></div>
+                <div name="ud" class="bg-blue-500 h-1 mx-auto w-4/12"></div>
+                <p class="pt-3 pb-5 font-serif font-thin">
+                    {{ categorie.description }}
+                </p>
+                <button onclick="location.href='{{ path('categories_show', {idcategorie: categorie.idcategorie }) }}'" class="ring-0 bg-gradient-to-b from-blue-300 to-blue-500 w-6/12 h-10 rounded-3xl shadow-xl mb-5 transition duration-200 ease-out transform hover:-translate-y-1 hover:scale-110">
+                    Voir les produits
+                </button>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
