@@ -14,9 +14,9 @@ Installez Docker afin d'avoir un container pour exécuter un projet Symfony
 ## Installation 👨‍💻
 Pour l'installation du projet:
 ```bash
-mkdir PPE4
-cd PPE4
-git clone https://github.com/zozo404/PPE4.git
+mkdir PPE4_FINI
+cd PPE4_FINI
+git clone https://github.com/zozo404/PPE4_FINI.git
 ```
 Ensuite, il faut installer Docker et les images MariaDB et PHPMyAdmin, une image Symfony (ex : https://github.com/cnadal/machine_docker )
 Après, allez sur PHPMyAdmin pour se connecter;
