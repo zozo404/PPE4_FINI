@@ -35,6 +35,7 @@ cd PPE4_FINI
 composer install
 composer update
 ```
+Chaque produit est relié à un tag afin de faciliter sa recherche.
 ## Documentation
 https://drive.google.com/file/d/19Qr9fpT0aVcU-aOe-R-Ty1GLWM5Q0EuM/view?usp=sharing
 ## License
